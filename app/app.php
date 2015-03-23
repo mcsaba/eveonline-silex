@@ -14,6 +14,9 @@ $app['debug'] = true;
 $app['base.path']   = __DIR__ . '/..';
 $app['cache.path']  = __DIR__ . '/../var/cache';
 $app['log.path']    = __DIR__ . '/../var/log';
+$app['resources.path']    = __DIR__ . '/../resources';
+
+@include_once 'keys.php';
 
 require_once __DIR__ . '/../resources/config/services.php';
 
